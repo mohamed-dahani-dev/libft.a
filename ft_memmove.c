@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 18:39:49 by mdahani           #+#    #+#             */
-/*   Updated: 2024/10/24 18:26:13 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/10/24 18:43:32 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,16 +25,29 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 	i = 0;
 	if (tmp_dest > tmp_src)
 	{
-		while (len > 0)
+		while (len-- > 0)
 		{
 			tmp_dest[len] = tmp_src[len];
-			len--;
 		}
 	}
 	else
 	{
-		while (i++ < len)
+		while (i < len)
+		{
 			tmp_dest[i] = tmp_src[i];
+			i++;
+		}
 	}
 	return (dest);
 }
+
+/*
+int main() {
+    char src[] = "Hello, World!";
+    char dest[20];
+    
+    ft_memmove(dest, src, 13);
+    printf("%s", dest);
+    return 0;
+}
+*/
