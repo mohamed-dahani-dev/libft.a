@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 18:37:42 by mdahani           #+#    #+#             */
-/*   Updated: 2024/10/23 10:49:24 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/10/25 14:51:15 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,10 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
+
+/*
+int main() {
+   printf("%c", ft_toupper('a'));
+    return 0;
+}
+*/

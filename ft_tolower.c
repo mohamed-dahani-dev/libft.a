@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 18:52:02 by mdahani           #+#    #+#             */
-/*   Updated: 2024/10/23 10:49:33 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/10/25 14:52:15 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,10 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
+
+/*
+int main() {
+   printf("%c", ft_tolower('A'));
+    return 0;
+}
+*/
