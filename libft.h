@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:28:07 by mdahani           #+#    #+#             */
-/*   Updated: 2024/10/26 15:05:46 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/10/26 15:23:31 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <stddef.h>
+# include <stdlib.h>
 
 int		ft_isalpha(int c);
 int		ft_toupper(int c);
@@ -35,5 +36,6 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *str, const char *find, size_t len);
 int		ft_atoi(char *str);
+void	*ft_calloc(size_t count, size_t size);
 
 #endif
