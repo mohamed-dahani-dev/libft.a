@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 12:21:04 by mdahani           #+#    #+#             */
-/*   Updated: 2024/10/26 12:42:00 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/10/26 15:06:42 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		i++;
 	}
 	return (0);
-
 }
 
 /*
