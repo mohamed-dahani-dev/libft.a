@@ -6,13 +6,14 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:28:07 by mdahani           #+#    #+#             */
-/*   Updated: 2024/10/26 16:08:38 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/10/27 14:38:39 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <stdio.h>
 # include <stddef.h>
 # include <stdlib.h>
 
@@ -38,5 +39,6 @@ char	*ft_strnstr(const char *str, const char *find, size_t len);
 int		ft_atoi(char *str);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(char *s1);
+char	*ft_substr(const char *s, unsigned int start, size_t len);
 
 #endif
