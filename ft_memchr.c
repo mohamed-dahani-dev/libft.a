@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 15:55:32 by mdahani           #+#    #+#             */
-/*   Updated: 2024/10/26 12:19:18 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/10/28 13:02:26 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,7 @@ int main() {
     size_t n = 13;
 
     char *result = (char *)ft_memchr(s, c, n);
-    if (result) {
-        printf("Found '%c' at position: %ld\n", c, result - s);
-    } else {
-        printf("Character '%c' not found.\n", c);
-    }
-
+    printf("%s", result);
     return 0;
 }
 */
