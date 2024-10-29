@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 15:21:07 by mdahani           #+#    #+#             */
-/*   Updated: 2024/10/28 12:39:46 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/10/29 12:20:55 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	if (!s1 || !set)
 		return (NULL);
-
 	len = ft_strlen(s1);
 	start = 0;
 	while (start < len && ft_strchr(set, s1[start]))
