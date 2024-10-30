@@ -25,23 +25,28 @@ static char	**free_array(char **ptr, int i)
 
 static int	ft_count_words(char const *str, char c)
 {
-	int	i;
-	int	count;
+		int i;
+        int count;
+        int word;
 
-	i = 0;
-	count = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i] == c)
-			i++;
-		else
-		{
-			count++;
-			while (str[i] && str[i] != c)
-				i++;
-		}
-	}
-	return (count);
+        i = 0;
+        count = 0;
+        word = 0;
+        while (str[i])
+        {
+            if (str[i] != c)
+            {
+                if (word == 0)
+                {
+                    count++;
+                    word = 1;
+                }
+            }
+            else
+                word = 0;
+            i++;
+        }
+        return (count);
 }
 
 static char	*ft_putword(char *word, char const *s, int i, int word_len)
