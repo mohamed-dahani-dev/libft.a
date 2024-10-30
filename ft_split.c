@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 13:53:05 by mdahani           #+#    #+#             */
-/*   Updated: 2024/10/30 13:53:10 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/10/30 14:05:53 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,28 +25,28 @@ static char	**free_array(char **ptr, int i)
 
 static int	ft_count_words(char const *str, char c)
 {
-		int i;
-        int count;
-        int word;
+	int	i;
+	int	count;
+	int	word;
 
-        i = 0;
-        count = 0;
-        word = 0;
-        while (str[i])
-        {
-            if (str[i] != c)
-            {
-                if (word == 0)
-                {
-                    count++;
-                    word = 1;
-                }
-            }
-            else
-                word = 0;
-            i++;
-        }
-        return (count);
+	i = 0;
+	count = 0;
+	word = 0;
+	while (str[i])
+	{
+		if (str[i] != c)
+		{
+			if (word == 0)
+			{
+				count++;
+				word = 1;
+			}
+		}
+		else
+			word = 0;
+		i++;
+	}
+	return (count);
 }
 
 static char	*ft_putword(char *word, char const *s, int i, int word_len)
@@ -107,3 +107,16 @@ char	**ft_split(char const *s, char c)
 	s2 = ft_split_words(s, c, s2, num_words);
 	return (s2);
 }
+
+/*
+int main() {
+    char **result = ft_split("hello, is, me", ',');
+    int i = 0;
+    while (result[i])
+    {
+        printf("%s \n", result[i]);
+        i++;
+    }
+    return 0;
+}
+*/
