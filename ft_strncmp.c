@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 15:36:17 by mdahani           #+#    #+#             */
-/*   Updated: 2024/10/25 15:53:52 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/10/31 19:46:58 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		i++;
 	if (i == n)
 		return (0);
-	return (s1[i] - s2[i]);
+	return ((unsigned char) s1[i] - (unsigned char) s2[i]);
 }
 
 /*
