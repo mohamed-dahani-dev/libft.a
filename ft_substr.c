@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 16:09:58 by mdahani           #+#    #+#             */
-/*   Updated: 2024/10/27 14:40:38 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/10/31 19:54:16 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,11 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 		return (ft_strdup(""));
 	if (len > ft_strlen(s + start))
 		len = ft_strlen(s + start);
-	str = ft_calloc(len + 1, sizeof(char));
+	str = (char *)ft_calloc(len + 1, sizeof(char));
 	if (!str)
 		return (NULL);
 	i = 0;
-	while (i > len)
+	while (i < len)
 	{
 		str[i] = s[i + start];
 		i++;
