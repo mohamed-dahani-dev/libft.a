@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 15:09:40 by mdahani           #+#    #+#             */
-/*   Updated: 2024/11/01 11:26:36 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/01 11:28:53 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*tmp;
-	size_t	i;
 
 	if (size && count > __SIZE_MAX__ / size)
 		return (NULL);
