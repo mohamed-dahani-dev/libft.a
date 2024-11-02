@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:28:07 by mdahani           #+#    #+#             */
-/*   Updated: 2024/11/02 20:23:17 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/02 20:24:20 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,4 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 			last = last -> next;
 		last -> next = new;
 	}
-
 }
