@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:28:07 by mdahani           #+#    #+#             */
-/*   Updated: 2024/11/02 20:13:21 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/02 20:15:38 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,16 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	int	count;
+	int		count;
+	t_list	*node;
 
 	if (!lst)
 		return ;
 	count = 0;
-	while (lst != NULL)
+	node = lst;
+	while (node != NULL)
 	{
-		lst = lst -> next;
+		node = node -> next;
 		count++;
 	}
 	return (count);
