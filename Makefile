@@ -6,7 +6,7 @@
 #    By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/23 10:28:07 by mdahani           #+#    #+#              #
-#    Updated: 2024/11/02 20:38:13 by mdahani          ###   ########.fr        #
+#    Updated: 2024/11/03 14:08:08 by mdahani          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,23 +29,27 @@ OBJECTS = $(SOURCES:.c=.o)
 OBJECTS_BONUS = $(SOURCES_BONUS:.c=.o)
 
 CC = gcc
+AR = ar
 
 CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	$(AR) -r $@ $?
+	$(AR) -rc $@ $^
+
+bonus: $(NAME) $(OBJECTS_BONUS)
+	$(AR) -rc $@ $^
 
 %.o: %.c
-	$(CC) -c $(CFLAGS) $?
+	$(CC) -c $(CFLAGS) $< -o $@
 
 clean:
-	rm -f $(OBJECTS)
+	rm -f $(OBJECTS) $(OBJECTS_BONUS)
 
 fclean: clean
-	rm -f $(NAME)
+	rm -f $(NAME) bonus
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
