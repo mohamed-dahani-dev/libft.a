@@ -6,7 +6,7 @@
 #    By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/23 10:28:07 by mdahani           #+#    #+#              #
-#    Updated: 2024/11/03 14:22:02 by mdahani          ###   ########.fr        #
+#    Updated: 2024/11/03 14:25:11 by mdahani          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,8 +38,8 @@ all: $(NAME)
 $(NAME): $(OBJECTS)
 	$(AR) -rc $@ $^
 
-bonus: $(NAME) $(OBJECTS_BONUS)
-	$(AR) -rc $@ $^
+bonus: $(OBJECTS_BONUS)
+	$(AR) -rc bonus.a $^
 
 %.o: %.c
 	$(CC) -c $(CFLAGS) $< -o $@
@@ -48,7 +48,7 @@ clean:
 	rm -f $(OBJECTS) $(OBJECTS_BONUS)
 
 fclean: clean
-	rm -f $(NAME) bonus
+	rm -f $(NAME) bonus.a
 
 re: fclean all
 
