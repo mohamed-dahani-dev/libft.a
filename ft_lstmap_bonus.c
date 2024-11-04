@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:28:07 by mdahani           #+#    #+#             */
-/*   Updated: 2024/11/03 12:31:19 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/04 19:48:37 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,18 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_list;
 	t_list	*current;
+	void	*new_content;
 
 	if (!lst || !f || !del)
 		return (NULL);
 	new_list = NULL;
 	while (lst)
 	{
-		current = ft_lstnew(f(lst -> content));
+		new_content = f(lst->content);
+		current = ft_lstnew(new_content);
 		if (!current)
 		{
+			del(new_content);
 			ft_lstclear(&new_list, del);
 			return (NULL);
 		}
