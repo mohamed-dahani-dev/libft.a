@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 15:20:40 by mdahani           #+#    #+#             */
-/*   Updated: 2024/11/01 15:28:34 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/04 12:31:38 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,8 @@ char	*ft_strrchr(const char *str, int c)
 /*
 int main() {
     const char *str = "Hello, world!";
-    char c = 'w';
-
-    char *result = ft_strrchr(str, c);
-    printf("Found %c, c);
+    char c = 'l';
+    printf("%s", ft_strrchr(str, c));
     return 0;
 }
 */
