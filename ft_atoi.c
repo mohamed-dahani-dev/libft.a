@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 14:46:46 by mdahani           #+#    #+#             */
-/*   Updated: 2024/11/04 19:27:10 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/04 19:37:25 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,17 +31,17 @@ int	ft_atoi(const char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		result = result * 10 + (str[i] - '0');
-		i++;
 		if (result > 2147483647)
 			return (-1);
+		result = result * 10 + (str[i] - '0');
+		i++;
 	}
 	return ((int)result * sign);
 }
 
 /*
 int main() {
-    printf("%i", ft_atoi("123"));
+    printf("%i\n", ft_atoi("2000"));
     return 0;
 }
 */
