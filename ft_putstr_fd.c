@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:28:07 by mdahani           #+#    #+#             */
-/*   Updated: 2024/11/01 17:16:47 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/05 13:31:25 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,9 @@ void	ft_putstr_fd(char *s, int fd)
 
 /*
 int main() {
-    ft_putstr_fd("mohamed", 0);
+    FILE *file = fopen("file.txt", "w");
+    ft_putstr_fd("mohamed", fileno(file));
+    fclose(file);
     return 0;
 }
 */
