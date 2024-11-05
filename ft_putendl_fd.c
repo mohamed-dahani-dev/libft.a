@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:28:07 by mdahani           #+#    #+#             */
-/*   Updated: 2024/10/31 12:13:21 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/05 13:33:32 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,9 @@ void	ft_putendl_fd(char *s, int fd)
 
 /*
 int main() {
-    ft_putendl_fd("mohamed", 1);
-
+    FILE *file = fopen("file.txt", "w");
+    ft_putendl_fd("mohamed", fileno(file));
+    fclose(file);
     return 0;
 }
 */
