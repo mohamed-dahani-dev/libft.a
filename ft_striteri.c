@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:28:07 by mdahani           #+#    #+#             */
-/*   Updated: 2024/10/31 10:58:08 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/05 12:23:35 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 
 /*
 void to_upper(unsigned int index, char *c) {
-    *c = toupper(*c);
+    if (*c >= 'a' && *c <= 'z')
+        *c = *c - 32;
 }
 
 int main() {
