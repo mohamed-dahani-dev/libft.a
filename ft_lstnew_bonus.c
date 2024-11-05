@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:28:07 by mdahani           #+#    #+#             */
-/*   Updated: 2024/11/03 15:12:55 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/05 16:14:39 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,11 @@ t_list	*ft_lstnew(void *content)
 	element -> next = NULL;
 	return (element);
 }
+/*
+int main()
+{
+	t_list *element = ft_lstnew("Hello World");
+	printf("%s\n", element -> content);
+	return 0;
+}
+*/
