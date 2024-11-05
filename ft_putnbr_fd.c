@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:28:07 by mdahani           #+#    #+#             */
-/*   Updated: 2024/10/31 12:54:45 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/05 13:42:46 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,9 @@ void	ft_putnbr_fd(int n, int fd)
 
 /*
 int main() {
-    ft_putnbr_fd(42, 1);
+    FILE *file = fopen("file.txt", "w");
+    ft_putnbr_fd(2000, fileno(file));
+    fclose(file);
     return 0;
 }
 */
