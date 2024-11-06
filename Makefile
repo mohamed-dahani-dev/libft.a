@@ -39,4 +39,6 @@ fclean: clean
 
 re: fclean all
 
+.SECONDARY: ${OBJS} ${OBJSB}
+
 .PHONY: all bonus clean fclean re
