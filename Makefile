@@ -30,7 +30,7 @@ ${NAME}: ${OBJS}
 all: ${NAME}
 
 bonus: ${OBJS} ${OBJSB}
-	${LIBC} ${NAME} ${OBJSB}
+	${LIBC} ${NAME} ${OBJSB} ${OBJS}
 clean:
 	${RM} ${OBJS} ${OBJSB}
 
