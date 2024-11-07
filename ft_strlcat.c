@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 12:31:36 by mdahani           #+#    #+#             */
-/*   Updated: 2024/11/03 19:05:22 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/07 12:32:00 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,11 @@ size_t	ft_strlcat(char *dest, const char *src, size_t dest_size)
 
 /*
 int main() {
-    char dest[20] = "Hello, ";
-    const char *src = "world!";
-
-    size_t result = ft_strlcat(NULL, src, 0);
+	char dest[20] = "";
+    const char *src = "hello world";
+    ft_strlcat(dest, src, 12);
     printf("dest: %s\n", dest);
-    printf("Total length after concatenation: %i\n", result);
-
+    printf("%zu",  ft_strlcat(dest, src, 11));
     return 0;
 }
 */
