@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 15:54:35 by mdahani           #+#    #+#             */
-/*   Updated: 2024/10/31 10:41:07 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/07 13:22:34 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,16 +33,12 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 }
 
 /*
-char my_function(unsigned int index, char c) {
+char rot_one(unsigned int index, char c) {
     return (c + index);
 }
 int main() {
     char *str = "hello";
-    char *result = ft_strmapi(str, my_function);
-
-    printf("Original: %s\n", str);
-    printf("Transformed: %s\n", result);
-
-    return 0;
+    printf("%s\n", str);
+    printf("%s\n", ft_strmapi(str, rot_one));
 }
 */
